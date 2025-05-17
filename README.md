@@ -62,6 +62,27 @@ npm run build
 npm start
 ```
 
+## Testing
+
+The application includes unit and integration tests. You can run the tests with the following commands:
+
+```bash
+# Run all tests (currently runs weatherService and API tests)
+pnpm test
+
+# Run tests in watch mode during development
+pnpm test:watch
+
+# Run tests with coverage report
+pnpm test:coverage
+```
+
+The test suite includes:
+- Unit tests for WeatherService - 测试天气服务功能
+- Integration tests for API endpoints - 测试API接口
+
+> 注意：控制器测试和MCP函数测试目前处于开发中，暂时不包含在测试运行中。
+
 ## API Endpoints
 
 ### Get Current Weather
@@ -125,8 +146,7 @@ GET /health
           "nightwind": "西南",
           "daypower": "≤3",
           "nightpower": "≤3"
-        },
-        // More forecast days...
+        }
       ]
     }
   ]
@@ -135,4 +155,4 @@ GET /health
 
 ## License
 
-ISC 
+ISC
