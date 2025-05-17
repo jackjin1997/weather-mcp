@@ -12,7 +12,7 @@ A TypeScript-based weather Messaging and Cloud Platform (MCP) application that p
 ## Prerequisites
 
 - Node.js (v14 or higher)
-- npm or yarn
+- pnpm (recommended) or npm
 - AMAP API key
 
 ## Installation
@@ -25,6 +25,10 @@ cd weather-mcp
 
 2. Install dependencies:
 ```bash
+# Using pnpm (recommended)
+pnpm install
+
+# Using npm
 npm install
 ```
 
@@ -39,12 +43,21 @@ AMAP_KEY=your_amap_key_here
 ### Development Mode
 
 ```bash
+# Using pnpm
+pnpm dev
+
+# Using npm
 npm run dev
 ```
 
 ### Production Mode
 
 ```bash
+# Using pnpm
+pnpm build
+pnpm start
+
+# Using npm
 npm run build
 npm start
 ```
